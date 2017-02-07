@@ -13,4 +13,5 @@ var server = http.createServer((req, res) => {
   })
 
 server.listen(port, hostname, function() {
+	console.log('the server is running at http://' + hostname + ':' + port)
 })
