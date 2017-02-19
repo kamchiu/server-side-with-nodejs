@@ -9,7 +9,7 @@ var app = express();
 app.use(morgan('dev'));
 
 function auth(req, res, next) {
-	console.log(req.Headers);
+	console.log(req.headers);
 	var authHeader = req.headers.authorization;
 	if(!authHeader) {
 		var err = new Error('You are not autenticated!');
